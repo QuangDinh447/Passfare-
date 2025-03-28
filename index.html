@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quản Lý Mật Khẩu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Trình Quản Lý Mật Khẩu</h1>
+    <button id="theme-toggle">🌙</button>
+    <button id="change-master">Đổi mật khẩu</button>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Thêm tài khoản</h2>
+      <input type="text" id="account" placeholder="Tên tài khoản" />
+      <input type="text" id="username" placeholder="Tên đăng nhập" />
+      <div class="password-row">
+        <input type="text" id="password" placeholder="Mật khẩu" />
+        <button id="generate">Tạo mạnh</button>
+      </div>
+      <button id="save">Lưu</button>
+    </section>
+
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Tìm kiếm tài khoản..." />
+    </section>
+
+    <section id="password-list"></section>
+  </main>
+
+  <footer>
+    CODE BY: Quang Định DEV
+  </footer>
+
+  <script src="crypto-js.min.js"></script>
+  <script src="app.js"></script>
+
+<div class="backup-restore">
+  <button id="backup">Sao lưu</button>
+  <input type="file" id="restore" accept=".json" />
+</div>
+
+</body>
+</html>
